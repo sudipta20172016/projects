@@ -1,0 +1,99 @@
+<div id="holderHDx2">
+    <!-- Left Content Starts -->
+    <div class="leftHD">
+        <div class="container-fluid">
+
+            <!-- Header Starts -->
+            <div class="row">
+                <!-- LOGO -->
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                    <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a>
+                </div>
+
+                <!-- Filters -->
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                    <div class="form-group">
+                        <form>
+                            <input type="text" class="form-control bigInput" id="searchInput" placeholder="Search">
+                            <select class="form-control">
+                              <option>All Languages</option>
+                              <option>Assamese</option>
+                              <option>Bengali</option>
+                              <option>Gujarati</option>
+                              <option>Hindi</option>
+                              <option>Kannada</option>
+                              <option>Malayalam</option>
+                              <option>Marathi</option>
+                              <option>Odiya</option>
+                              <option>Punjabi</option>
+                              <option>Tamil</option>
+                              <option>Telugu</option>
+                            </select>
+                            <a href="step1.html" class="menu">menu</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Header Ends -->
+
+            <!-- Body Starts -->
+            <div class="row">
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                    <div class="breadcrumbs">
+                        <h1><span>Singer Name</span> &nbsp; &nbsp; | &nbsp; &nbsp; <span>All Languages</span></h1>
+                    </div>
+                    <ul class="datagrid col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <li ng-repeat="album in albums" ng-click="onAlbumClick(album)">
+                            <div><img ng-src="{{album.imageAlbum}}" alt=""></div><span>{{album.FlimName}}</span>
+                        </li>
+                    </ul>
+
+                    <ul class="paginationDot col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                    <div class="bigImage">
+                        <img src="data/bigImages/asha.png" alt="">
+                        <span><strong>Singer Name</strong>Category Name</span>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- Body Ends -->
+
+            <!-- Footer Starts -->
+            <div class="row">
+                <div id="footer" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Developed by XXXX (XXXX) Xxxxxxx &middot; 2017 &middot; XXXX &middot; Music Browser Application</div>
+            </div>
+            <!-- Footer Ends -->
+        </div>
+    </div>
+    <!-- Left Content Ends -->
+
+    <!-- Right Content Starts -->
+    <div class="rightHD">
+        <img src="images/logo.png" alt="" class="logo">
+
+        <!-- when nothing is happening (no video or audio playing) -->
+        <div class="idleScreen" style="display:none;"></div>
+
+        <!-- when audio is playing -->
+        <div class="posterScreen" style="display:block;">
+            <img src="data/posters/asha.png" alt="">
+        </div>
+
+        <!-- when video is playing -->
+        <div class="videoScreen" style="display:none;">
+            <video id="videoData" class="video">
+                    <source src="data/video/demo.mp4" type="video/mp4">                    
+                </video>
+        </div>
+    </div>
+    <!-- Right Content Ends -->
+</div>

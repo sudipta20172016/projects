@@ -1,0 +1,159 @@
+<div id="holderHDx2">
+    <!-- Left Content Starts -->
+    <div class="leftHD">
+        <div class="container-fluid">
+
+            <!-- Header Starts -->
+            <div class="row">
+                <!-- LOGO -->
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                    <a href="#!/"><img src="images/logo.png" alt="" class="logo"></a>
+                </div>
+
+                <!-- Filters -->
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                    <div class="form-group">
+                        <a href="step2.html" class="menu">menu</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Header Ends -->
+
+            <!-- Body Starts -->
+            <div class="row">
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                    <div class="breadcrumbs">
+                        <h1><span>Singer Name</span> &nbsp; &nbsp; | &nbsp; &nbsp; <span>All Languages</span> &nbsp; &nbsp; | &nbsp; &nbsp; <span>Album Name</span></h1>
+                    </div>
+                    <ul class="songGrid col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <li ng-repeat="song in songs" ng-click="onSongClick(song)">
+                            <p><strong>{{song.name}}</strong></p>
+                            <p><span>Film Name:</span>{{song.FlimName}} ({{song.year}})</p>
+                            <p><span>Music Director:</span> {{song.musicDirector}}</p>
+                            <p><span>Lyricist:</span> {{song.lyricist}}</p>
+                            <div><img src="data/song-icon.png" alt=""></div>
+                        </li>
+                    </ul>
+
+                    <ul class="paginationDot col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+
+                    
+                    <!-- Audio Player Starts -->
+                    <ul ng-if="selectedSong" class="paginationDot col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                         <audio id="music" preload="true">
+                          <source src="{{selectedSong.fileurl}}" type="audio/mpeg" />
+                        </audio>
+
+                        <!--<div id="audioplayer" style="margin-top:70px;height:auto;">-->
+                            <div id="audioplayer">
+                            <!--<videogular vg-theme="configmp3.theme.url" class="videogular-container audio">
+                                <vg-media vg-src="configmp3.sources" vg-type="audio"></vg-media>
+                                <vg-controls>
+                                    <vg-play-pause-button></vg-play-pause-button>
+                                    <vg-time-display>{{ currentTime | date:'mm:ss':'+0000' }}</vg-time-display>
+                                    <vg-scrub-bar>
+                                        <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+                                    </vg-scrub-bar>
+                                    <vg-time-display>{{ timeLeft | date:'mm:ss':'+0000' }}</vg-time-display>
+                                    <vg-volume>
+                                        <vg-mute-button></vg-mute-button>
+                                        <vg-volume-bar></vg-volume-bar>
+                                    </vg-volume>
+                                </vg-controls>
+                            </videogular>-->
+                            <div class="holder">
+                                <!-- play / pause -->
+                              <button id="pButton" class="play"></button>
+                              
+                                   <button id="sButton" class="stop"></button>
+
+                               
+                                <div id="timeline">
+                                    <div id="playhead"></div>
+                                </div>
+
+                               
+                                <div id="volcontrol">
+                                    <div id="volhead"></div>
+                                </div>
+                            </div>
+                            <ul>
+                                <li class="playLabel">Play</li>
+                                <li class="stopLabel">Stop</li>
+                                <li class="seekLabel">Time: 0.00 / 0.00</li>
+                                <li class="volLabel">Volume</li>
+                            </ul>
+                        </div>
+<!--<script src="libs/html5audio.js" type="text/javascript"></script>-->
+                       
+                    </ul>
+                    <!-- Audio Player Starts -->
+                </div>
+
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                    <div class="bigImage">
+                        <img src="{{selectedSong.imageBig}}" alt="">
+                        <span><strong>{{selectedSong.singerName}}</strong>{{selectedSong.category}}</span>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- Body Ends -->
+
+            <!-- Footer Starts -->
+            <div class="row">
+                <div id="footer" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Developed by XXXX (XXXX) Xxxxxxx &middot; 2017 &middot; XXXX &middot; Music Browser Application</div>
+            </div>
+            <!-- Footer Ends -->
+        </div>
+    </div>
+    <!-- Left Content Ends -->
+
+    <!-- Right Content Starts -->
+    <div class="rightHD">
+        <img src="images/logo.png" alt="" class="logo">
+
+        <!-- when nothing is happening (no video or audio playing) -->
+        <div class="idleScreen" style="display:none;"></div>
+
+        <!-- when audio is playing -->
+        <div class="posterScreen" style="display:none;">
+            <img src="data/posters/asha.png" alt="">
+        </div>
+       
+
+        <!-- when video is playing -->
+        <div class="videoScreen" style="display:block;width:60%;height:60%;">
+            <videogular vg-player-ready="config.onPlayerReady($API)" vg-theme="config.theme.url">
+                <vg-media vg-src="config.sources"
+                          vg-tracks="config.tracks" vg-preload="config.preload">
+                </vg-media>
+                <vg-controls vg-autohide="config.plugins.controls.autoHide" vg-autohide-time="config.plugins.controls.autoHideTime">
+                    <vg-play-pause-button></vg-play-pause-button>
+                    <vg-time-display>{{ currentTime | date:'mm:ss':'+0000' }}</vg-time-display>
+                    <vg-scrub-bar>
+                        <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+                    </vg-scrub-bar>
+                    <vg-time-display>{{ timeLeft | date:'mm:ss':'+0000' }}</vg-time-display>
+                    <vg-volume>
+                        <vg-mute-button></vg-mute-button>
+                        <vg-volume-bar></vg-volume-bar>
+                    </vg-volume>
+                    <vg-fullscreen-button></vg-fullscreen-button>
+                    <my-stop-button></my-stop-button>
+                </vg-controls>
+            </videogular>
+
+           <!-- <video id="videoData" class="video">
+                    <source src="data/video/demo.mp4" type="video/mp4">                    
+                </video>-->
+        </div>
+    </div>
+    <!-- Right Content Ends -->
+</div>

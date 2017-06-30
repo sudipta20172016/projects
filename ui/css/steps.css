@@ -1,0 +1,246 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'quicksand_book';
+    src: url('../fonts/quicksand_book-webfont.eot') format('eot'),
+		 url('../fonts/quicksand_book-webfont.woff') format('woff'),
+         url('../fonts/quicksand_book-webfont.svg') format('svg'),
+		 url('../fonts/quicksand_book-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+.form-group{ margin:70px 0 0 0;}
+.bigInput{max-width:620px !important;}
+.form-control{ background:rgba(0,0,0,0.30); -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; max-width:300px; float:left; margin:7px 20px 0 0; height:40px; font-size:18px;
+  position: relative; 
+  border-top: 1px solid #f5d4a9;
+  border-bottom: 1px solid #8d7b64;
+  color:#a9a7aa;
+}
+.form-control:before, .form-control:after {
+  content: "";
+  position: absolute;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5d4a9), to(#8d7b64)) !important;
+  background-image: -webkit-linear-gradient(#f5d4a9, #8d7b64) !important;
+  background-image: -moz-linear-gradient(#f5d4a9, #8d7b64) !important;
+  background-image: -o-linear-gradient(#f5d4a9, #8d7b64) !important;
+  background-image: linear-gradient(#f5d4a9, #8d7b64) !important;
+  top: -1px !important;
+  bottom: -1px !important;
+  width: 1px !important;
+}
+.form-control:before {
+  left: -1px  !important;
+}
+.form-control:after {
+  right: -1px !important;
+}
+
+.menu{ background:rgba(0,0,0,0.30) url(../images/back-btn.png); width:50px; height:50px; text-indent:-9999px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; margin:0 70px 0 10px; display:inline-block; float:right;}
+.menu:hover{ background:rgba(0,0,0,0.90) url(../images/back-btn.png); }
+.inactive{ opacity:0.3;}
+
+
+.breadcrumbs{ height:140px; margin:0 0 0 92px;}
+.breadcrumbs h1{ font-size:24px; line-height:140px; color:#b89a72; text-transform:uppercase; }
+
+.paginationDot{ width:100%;  margin:0 0 0 75px !important;}
+.paginationDot li{width:25px; height:25px; margin:0 15px 0 0; float:left; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; text-indent:-9999px; background:rgba(0,0,0,0.45); cursor:pointer; border:#c1a886 1px solid; border-top: 1px solid #f5d4a9; border-bottom: 1px solid #8d7b64;}
+.paginationDot li.active{background:rgba(255,255,255,0.1)}
+.paginationDot li:hover{background:rgba(255,255,255,0.2)}
+
+
+/* -------- */
+
+.datagrid {margin:0 0 0 75px !important;}
+.datagrid li{float:left; height:240px; width:198px; text-align:center; color:#aba8ad; text-transform:uppercase; margin:0 50px 57px 0;  cursor:pointer;  }
+.datagrid li span{line-height:42px;}
+
+
+.datagrid li div img{max-height:198px; max-width:198px; opacity:0.65;
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+	-webkit-transition: all 1s;
+    transition: all 1s;}
+
+.datagrid li div img:hover{ opacity:1;
+	 -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+	-webkit-transition: all 1s; /* Safari */
+    transition: all 1s;
+	}	
+	
+	
+.datagrid li div {height:200px; width:198px; display:inline-block; font:normal 14px/46px 'quicksand_book'; text-transform:uppercase; color:#efefef; letter-spacing:3px; left:4px;
+  position: relative;
+  border-top: 1px solid #f5d4a9;
+  border-bottom: 1px solid #8d7b64;
+  background:rgba(0,0,0,0.5)
+}
+.datagrid li div:hover{color:#FFF; background:rgba(0,0,0,1);text-decoration:none;}
+.datagrid li div:before, .datagrid li div:after {
+  content: "";
+  position: absolute;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5d4a9), to(#8d7b64));
+  background-image: -webkit-linear-gradient(#f5d4a9, #8d7b64);
+  background-image: -moz-linear-gradient(#f5d4a9, #8d7b64);
+  background-image: -o-linear-gradient(#f5d4a9, #8d7b64);
+  background-image: linear-gradient(#f5d4a9, #8d7b64);
+  top: -1px;
+  bottom: -1px;
+  width: 1px;
+}
+.datagrid li div:before {
+  left: -1px;
+}
+.datagrid li div:after {
+  right: -1px;
+}
+
+/* ------ */
+.songGrid {margin:0 0 0 75px !important;}
+.songGrid li{float:left; height:100px; width:490px; color:#aba8ad; text-transform:uppercase; margin:0 30px 57px 0;  cursor:pointer; background:rgba(9,0,17,0.28); 
+-webkit-transition: all 1s;
+transition: all 1s;}
+
+.songGrid li p{ float:right; display:inline-block; width:365px; font:normal 14px/15px 'quicksand_book' !important; text-transform:capitalize; color:#9B9DA3; margin:10px 0 -5px 0; padding:0;}
+.songGrid li p strong{font:normal 16px/16px 'quicksand_book' !important; text-transform:uppercase; color:#D7B88E;}
+
+.songGrid li p span{ width:110px; display:inline-block;}
+
+.songGrid li div img{max-height:98px; max-width:98px; 
+-webkit-transition: all 1s;
+transition: all 1s;}
+
+
+.songGrid li:hover > div{opacity:1;}
+.songGrid li:hover{background:rgba(9,0,17,0.68);}
+	
+.songGrid li div {height:100px; width:98px; display:inline-block; font:normal 14px/46px 'quicksand_book'; text-transform:uppercase; color:#efefef; letter-spacing:3px; left:4px; opacity:0.7; position: relative;
+  border-top: 1px solid #f5d4a9;
+  border-bottom: 1px solid #8d7b64;
+  background:rgba(0,0,0,0.5);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.songGrid li div:hover{opacity:1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.songGrid li div:before, .songGrid li div:after {
+  content: "";
+  position: absolute;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5d4a9), to(#8d7b64));
+  background-image: -webkit-linear-gradient(#f5d4a9, #8d7b64);
+  background-image: -moz-linear-gradient(#f5d4a9, #8d7b64);
+  background-image: -o-linear-gradient(#f5d4a9, #8d7b64);
+  background-image: linear-gradient(#f5d4a9, #8d7b64);
+  top: -1px;
+  bottom: -1px;
+  width: 1px;
+}
+.songGrid li div:before {
+  left: -1px;
+}
+.songGrid li div:after {
+  right: -1px;
+}
+
+
+/* ------ */
+.bigImage{ position:relative;}
+.bigImage img{opacity:0.25;}
+.bigImage span{font:normal 24px/46px 'quicksand_book'; text-transform:uppercase; color:#565162; position:absolute; bottom:60px; left:0; width:640px; text-align:center; }
+.bigImage span strong{font:normal 46px/60px 'quicksand_book'; text-transform:uppercase; color:#FFF; display:block;}
+
+
+/*Container for audio player*/
+#audioplayer{
+	width: 840px;
+	margin-top: 50px;
+	border: rgba(255,255,255,0.07) 1px solid;
+	border-radius: 10px;
+	height: 138px;	
+	-moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+	background:rgba(0,0,0,0.30);
+}
+
+#audioplayer .holder{
+	width: auto;
+	height: 112px;	
+	padding:10px 20px;
+	
+}
+
+#audioplayer ul{margin:0 !important; padding:0 20px !important;}
+#audioplayer ul li{	text-indent:0 !important; background:none; border:none; float:left; display:inline-block; font:normal 14px/16px 'quicksand_book' !important; text-transform:uppercase; color:#AB916D; text-align:center; border-radius:0 !important; cursor:default; }
+.playLabel{width: 100px !important;  margin:0 15px 0 0 !important;}
+.stopLabel{width: 70px !important;  margin:0 40px 0 0 !important;}
+.seekLabel{width: 382px !important;  margin:0 40px 0 0 !important;}
+.volLabel{width: 140px !important;  margin:0 0 0 0 !important;}
+
+/* Play/Pause Button */
+#pButton{
+	height:97px;
+	width: 100px;
+	border: none;
+	background-repeat: no-repeat;
+	float:left;
+	outline:none;
+}
+#sButton{
+	height:67px;
+	width: 70px;
+	border: none;
+	background-repeat: no-repeat;
+	float:left;
+	outline:none;
+	margin:15px 0 0 15px;
+}
+/*Classes for play/pause button background*/
+.play{background: url('../images/play.png') ;}
+.pause{background: url('../images/pause.png') ;}
+.stop{background: url('../images/stop.png') ;}
+
+#timeline{
+	width: 382px;
+	height: 19px;
+	background: rgba(0,0,0,0.75);
+	margin: 40px 0 0 40px;
+	float: left;
+	border-radius: 15px;
+}
+/*Grabable Playhead*/
+#playhead{
+	cursor: pointer;
+	width: 27px;
+	height: 27px;
+	margin-top: -4px;
+	background: url(../images/seek.png);
+}
+
+#volcontrol{
+	width: 150px;
+	height: 19px;
+	background: rgba(0,0,0,0.75);
+	margin: 40px 0 0 40px;
+	float: left;
+	border-radius: 15px;
+}
+/*Grabable Playhead*/
+#volhead{
+	cursor: pointer;
+	width: 27px;
+	height: 27px;
+	margin-top: -4px;
+	background: url(../images/seek.png);
+}
+
+

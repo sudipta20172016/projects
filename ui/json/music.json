@@ -1,0 +1,87 @@
+{
+    "list": [{
+            "language": "Bangla",
+            "name": "Aar Ki Tomay Chharchhi",
+            "singerName": "R. D. Burman",
+            "musicDirector": "R. D. Burman",
+            "lyricist": "D L Saha",
+            "FlimName": "Aparupa",
+            "year": "1946",
+            "category": "Composer Singer",
+            "startTime": "20s",
+            "mediaType": "mp3",
+            "duration": "30s",
+            "endTime": "",
+            "fileurl": "data/audio/Hindi/S. D. Burman/Saphal Hogi Teri Aradhana(Aradhana).mp3",
+            "imageSinger": "data/thumbs/artist2.png",
+            "imageAlbum": "data/albumArt/Bangla/6.jpg",
+            "imageBig": "data/bigImages/rahul.png",
+            "imagePoster": "data/posters/rahul.png"
+        },
+
+        {
+            "language": "Bangla",
+            "name": "Aaj Mon Cheyeche",
+            "singerName": "Lata Mangeshkar",
+            "musicDirector": "S. D. Burman",
+            "lyricist": "Gouriprosonno Majumder",
+            "FlimName": "Shankhabela",
+            "year": "1972",
+            "category": "Playback Singer",
+            "startTime": "10s",
+            "mediaType": "mp3",
+            "duration": "30s",
+            "endTime": "",
+            "fileurl": "data/audio/Bengali/Lata Mangeshkar/Aaj Mon Cheyeche (Shankhabela).mp3",
+            "imageSinger": "data/thumbs/artist1.png",
+            "imageAlbum": "data/albumArt/Bangla/5.jpg",
+            "imageBig": "data/bigImages/lata.png",
+            "imagePoster": "data/posters/lata.png"
+        },
+
+        {
+            "language": "Marathi",
+            "name": "Ka Ho Dharila Majvar Raag",
+            "singerName": "Asha Bhosle",
+            "musicDirector": "Hridaynath Mangeshkar",
+            "lyricist": "Hridaynath Mangeshkar",
+            "FlimName": "Jagachya Pathivar",
+            "year": "1973",
+            "category": "Actor Singer",
+            "startTime": "0",
+            "mediaType": "mp3",
+            "duration": "30s",
+            "endTime": "",
+            "fileurl": "data/audio/Marathi/Asha Bhosle/Ka Ho Dharila Majvar Raag (Jagachya Pathivar).mp3",
+            "imageSinger": "data/thumbs/artist3.png",
+            "imageAlbum": "data/albumArt/Marathi/7.jpg",
+            "imageBig": "data/bigImages/asha.png",
+            "imagePoster": "data/posters/asha.png"
+        },
+
+        {
+            "language": "Bangla",
+            "name": "Aaroi Dhan Lochia",
+            "singerName": "Lata Mangeshkar",
+            "musicDirector": "S. D. Burman",
+            "lyricist": "Gulzar",
+            "FlimName": "Angikar",
+            "year": "1946",
+            "category": "Playback Singer",
+            "startTime": "0",
+            "mediaType": "mp4",
+            "duration": "30s",
+            "endTime": "",
+            "fileurl": "video/Hindi/Ikk Kudi (Udta Punjab).mp4",
+            "imageSinger": "",
+            "imageAlbum": "",
+            "imageBig": "",
+            "imagePoster": ""
+        }
+
+
+
+
+    ]
+
+}

@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+#slideshow { float:left;
+  margin: 0;
+  position: relative;
+ 
+  height: 1080px;
+}
+
+#slideshow > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#rightDivision div { margin:340px 0 50px -100px;}
+
+#rightDivision .motiff{ opacity:0.5; margin:40px 0 0 480px;}
+
+#rightDivision .instructions{ display:block; opacity:0.3; background:url(../images/headfone.png) 0 0 no-repeat; height:18px; padding:0 0 0 30px; margin:40px 0 0 0; font:normal 14px/22px "Segoe UI"; color:#FFF; letter-spacing:1px;}
+
+.startButton {height:46px; padding:0 60px; display:inline-block; font:normal 14px/46px "Segoe UI"; text-transform:uppercase; color:#efefef; letter-spacing:3px; left:4px;
+  position: relative;
+  border-top: 1px solid #f5d4a9;
+  border-bottom: 1px solid #8d7b64;
+  background:rgba(0,0,0,0.5)
+}
+.startButton:hover{color:#FFF; background:rgba(0,0,0,1);text-decoration:none;}
+.startButton:before, .startButton:after {
+  content: "";
+  position: absolute;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5d4a9), to(#8d7b64));
+  background-image: -webkit-linear-gradient(#f5d4a9, #8d7b64);
+  background-image: -moz-linear-gradient(#f5d4a9, #8d7b64);
+  background-image: -o-linear-gradient(#f5d4a9, #8d7b64);
+  background-image: linear-gradient(#f5d4a9, #8d7b64);
+  top: -1px;
+  bottom: -1px;
+  width: 1px;
+}
+.startButton:before {
+  left: -1px;
+}
+.startButton:after {
+  right: -1px;
+}
+
+
+.startButton1 { height:46px; padding:0 100px; display:inline-block; font:normal 14px/46px "Segoe UI"; text-transform:uppercase;
+    border-width: 4px;
+    border-style: solid;
+	border-top:#f5d4a9 1px solid;
+    
+	-webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(#f5d4a9), to(#8d7b64)) 4 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(#f5d4a9, #8d7b64) 4 100%;
+    -moz-border-image:
+      -moz-linear-gradient(#f5d4a9, #8d7b64) 4 100%;    
+    -o-border-image:
+      -o-linear-gradient(#f5d4a9, #8d7b64) 4 100%;
+    border-image:
+      linear-gradient(to bottom, #f5d4a9, #8d7b64) 4 100%;
+}

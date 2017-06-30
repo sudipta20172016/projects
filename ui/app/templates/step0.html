@@ -1,0 +1,63 @@
+<div id="holderHDx2">
+    <!-- Left Content Starts -->
+    <div class="leftHD">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div id="slideshow" class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                        <div><img src="images/banner1.png"></div>
+                        <div><img src="images/banner2.png"></div>
+                        <div><img src="images/banner3.png"></div>
+                        <div><img src="images/banner4.png"></div>
+                    </div>
+                    <div id="rightDivision" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <img src="images/audio.png" class="motiff">
+                        <div><img src="images/logoBig.png"></div>
+                        <a href="#/singer" class="startButton"
+						>Start</a>
+                        <span class="instructions">Please use the headphones </span>
+                    </div>
+                </div>
+
+                <div id="footer" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Developed by XXXX (XXXX) Xxxxxxx &middot; 2017 &middot; XXXX &middot; Music Browser Application</div>
+            </div>
+        </div>
+    </div>
+    <!-- Left Content Ends -->
+
+    <!-- Right Content Starts -->
+    <div class="rightHD">
+        <img src="images/logo.png" alt="" class="logo">
+
+        <!-- when nothing is happening (no video or audio playing) -->
+        <div class="idleScreen" style="display:block;"></div>
+
+        <!-- when audio is playing -->
+        <div class="posterScreen" style="display:none;">
+            <img src="data/posters/asha.png" alt="">
+        </div>
+
+        <!-- when video is playing -->
+        <div class="videoScreen" style="display:none;">
+            <video id="videoData" class="video">
+                    <source src="data/video/demo.mp4" type="video/mp4">
+                </video>
+        </div>
+    </div>
+    <!-- Right Content Ends -->
+</div>
+
+
+
+<!-- Slideshow -->
+<script>
+    $("#slideshow > div:gt(0)").hide();
+    setInterval(function() {
+        $('#slideshow > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
+    }, 3000);
+</script>

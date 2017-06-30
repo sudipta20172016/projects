@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+*{ list-style:none; font-family:'quicksand_book' }
+body{/*overflow: hidden;*/ background:#080010 url(../images/bg.png) 0 0 no-repeat;}
+
+.logo{top:50px; left:55px; position:absolute;}
+ 
+
+
+#holderHDx2{ width:3840px; height:1080px;}
+#holderHDx2 .leftHD{width:1920px; height:1080px; float:left; position:relative;}
+#holderHDx2 .rightHD{width:1920px; height:1080px; float:right; position:relative;}
+
+.idleScreen{width:1920px; height:1080px; background:url(../images/idlePoster.png) no-repeat;}
+.posterScreen{width:1920px; height:1080px;}
+.videoScreen{width:1920px; height:1080px;}
+
+#videoData{width:1920px; height:1080px; background:#000;}
+ 
+#footer{ height:44px; position:absolute; bottom:0; border-top:#3d2f2e 1px solid; font:normal 14px/44px "Segoe UI"; color:#473533; text-align:center;}
